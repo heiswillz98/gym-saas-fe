@@ -29,7 +29,7 @@ export function AuthModals({
       <Dialog open={modal === "register"} onOpenChange={onClose}>
         <DialogContent className="max-h-[90vh] overflow-y-auto p-6 sm:rounded-lg w-full sm:max-w-md">
           <DialogHeader>
-            <DialogTitle>Register</DialogTitle>
+            <DialogTitle className="text-center font-bold">Welcome</DialogTitle>
           </DialogHeader>
           <RegisterationForm onSuccess={() => onSuccess("register")} />
         </DialogContent>
@@ -39,7 +39,9 @@ export function AuthModals({
       <Dialog open={modal === "login"} onOpenChange={onClose}>
         <DialogContent className="max-h-[90vh] overflow-y-auto p-6 sm:rounded-lg w-full sm:max-w-md">
           <DialogHeader>
-            <DialogTitle>Login</DialogTitle>
+            <DialogTitle className="text-center font-bold">
+              Welcome Back
+            </DialogTitle>
           </DialogHeader>
           <LoginForm onForgotPassword={onForgotPassword} />
         </DialogContent>

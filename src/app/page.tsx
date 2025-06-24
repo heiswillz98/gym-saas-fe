@@ -48,11 +48,13 @@ export default function Home() {
       <SuccessModal
         open={openModal === "success"}
         message="Registration successful. We’ll get back to you shortly!"
+        title="Message Sent"
         onClose={() => setOpenModal(null)}
       />
       <SuccessModal
         open={openModal === "forgot-success"}
-        message="A password reset link has been sent to your email."
+        message="Your message has been sent out successfully you will get a feedback from our team shortly"
+        title="Message Sent"
         onClose={() => setOpenModal(null)}
       />
     </main>

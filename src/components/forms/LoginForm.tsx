@@ -53,22 +53,21 @@ export function LoginForm({
         error={errors.password}
       />
 
-      <div className="text-right">
-        <button
-          type="button"
-          onClick={onForgotPassword}
-          className="text-sm text-blue-600 hover:underline"
-        >
-          Forgot Password?
-        </button>
-      </div>
-
       <Button
         type="submit"
         className="w-full h-12 bg-[#7647EE] hover:bg-purple-700"
       >
         Login
       </Button>
+      <div className="text-center">
+        <button
+          type="button"
+          onClick={onForgotPassword}
+          className="text-sm  hover:underline"
+        >
+          Forgot Password?
+        </button>
+      </div>
     </form>
   );
 }
